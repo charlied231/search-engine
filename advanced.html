@@ -6,29 +6,93 @@
     </title>
     <style>
         body {
-            font-family: 'Helvetica'
+            font-family: 'Arial';
+            font-size: 15px;
         }
+        .container {
+            width: 98%;
+            height: 60px;
+            margin: auto;
+            padding-top: 15px;
+            }
+
+        .one {
+            width: 15%;
+            height: 60px;
+            float: left;
+            }
+
+        .two {
+            margin-left: 15%;
+            height: 60px;
+            text-align:right;
+            margin-top: 15px;
+            }
+
+        .line {
+            width: 80%;
+            height: 60px;
+            margin: auto;
+            padding-top: 15px;
+            }
+
+        .first {
+            width: 40%;
+            height: 60px;
+            float: left;
+            }
+
+        .second {
+            margin-left: 05%;
+            height: 60px;
+            margin-top: 15px;
+            }
+
+        .nput {
+            margin-top: 10px;
+            width: 200px;
+            height: 20px;
+            border-radius: 5px;
+            border-color: whitesmoke;
+        }
+        
     </style>
 </head>
-<body>
-    <div>
-        <a href = 
+<body style ="margin:0">
+    <div style = "background-color: rgb(241, 241, 241)">
+    <section class="container">
+        <div class="one"><img src = "resources/google logo.png" alt = "google^2 logo" width =  120></div>
+        <div class="two"><a href = index.html style = "padding-right: 10px;"> Back to home </a></div>
+    </section>
     </div>
-    <center>
-    <div> 
-        <img src = "resources/google logo.png" alt = "google^2 logo" width = 20%>
+    <div style = "margin-left: 5%">
+        <p style = "color:rgb(245, 0, 0); font-size: 24px;"> Advanced Search</p>
+    </div>
+    <div style = "margin-left: 7%">
+        <p style = "font-size: 18px;"> Find pages with… </p>
     </div>
     <div>
         <form action="https://google.com/search">
-            <div>
-                <input type="text" name="q">
+            <div class = "line">
+                <div class = "first"><p> All these words:</p></div>
+                <div class = "second"><input type="text" name="as_q" class = "nput"></div>
             </div>
-            <div>
-                <input type="submit" name="btnK" value="Google Search">
-                <input type="submit" name="btnI" value="I am feeling lucky">
+            <div class = "line">
+                <div class = "first"><p> This exact word or phrase:</p></div>
+                <div class = "second"><input type="text" name="as_epq" class = "nput"></div>
+            </div>
+            <div class = "line">
+                <div class = "first"><p> Any of these words:</p></div>
+                <div class = "second"><input type="text" name="as_oq" class = "nput"></div>
+            </div>
+            <div class = "line">
+                <div class = "first"><p> None of these words:</p></div>
+                <div class = "second"><input type="text" name="as_eq" class = "nput"></div>
+            </div>
+            <div class = "line" style = "padding-left: 60%;">
+                <input type="submit" value="Advanced Search" style = "background-color: rgb(55, 141, 253); color: white; border-color: rgb(55, 141, 253); border-radius: 0px;">
             </div>
         </form>
     </div>
-    </center>
 </body>
 </html>

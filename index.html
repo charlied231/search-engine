@@ -6,27 +6,35 @@
     </title>
     <style>
         body {
-            font-family: 'Helvetica'
+            font-family: 'arial';
+            font-size: 15px;
+        }
+
+        .btton {
+            border-color:white; 
+            border-radius: 10px; 
+            font-size: 18px; 
+            color: rgb(116, 116, 116)
         }
     </style>
 </head>
 <body>
-    <div text-align = rigth>
-        <a href = images.html> Images </a>
-        <a href = images.html> Advanced Search </a>
+    <div style = "height : 200px; text-align : right">
+        <a href = images.html style = "padding-right: 10px;"> Images </a>
+        <a href = advanced.html style = "padding-right: 10px;"> Advanced Search </a>
     </div>
     <center>
-    <div> 
-        <img src = "resources/google logo.png" alt = "google^2 logo" width = 400>
+    <div style = "margin-bottom: 25px;"> 
+        <img src = "resources/google logo.png" alt = "google^2 logo" width = 300>
     </div>
     <div>
-        <form action="https://google.com/search">
-            <div>
-                <input type="text" name="q">
+        <form action= "https://google.com/search">
+            <div style = "margin-bottom: 25px;">
+                <input type="text" name="q" style="border-radius : 40px; font-size : 14pt; height : 30px; width : 600px; border-color:rgb(209, 209, 209)">
             </div>
             <div>
-                <input type="submit" name="btnK" value="Google Search">
-                <input type="submit" name="btnI" value="I am feeling lucky">
+                <input type="submit" name="btnK" value="Google Search" class = "btton">
+                <input type="submit" name="btnI" value="I am feeling lucky" class = "btton">
             </div>
         </form>
     </div>
